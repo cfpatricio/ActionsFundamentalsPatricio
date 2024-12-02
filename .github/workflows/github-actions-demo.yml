@@ -15,7 +15,7 @@ jobs:
       - run: |
           echo "The job was triggered by event: ${{ github.event_name }}"
           echo "The name of your branch is ${{ github.ref }} and your repository is ."
-          echo "Dump Github actions: ${{ toJSON(github) }}"
+          echo "Dump Github actions: ${{ toJSON(matrix) }}"
       - uses: actions/checkout@v4.2.2
       - name: List all files in the repository
         run: |
