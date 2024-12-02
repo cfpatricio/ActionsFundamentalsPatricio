@@ -22,6 +22,12 @@ jobs:
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
 
+      - name: Run my own container action
+        id: hello-action
+        uses: ./ActionsFundamentalsPatricio
+        with:
+          who-to-greet: '@Patricio'
+
           
   
   
